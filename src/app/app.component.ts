@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'angular';
+  title = 'Dolce Confeitaria';
+
+  public open(item) {
+    console.log("teste");
+    window.location.href=item;
+  }
 }
