@@ -1,6 +1,6 @@
 .background {
   /*background-color: #19193c;*/
-  background-image: radial-gradient(circle at 50% 100%, rgb(43, 25, 100), rgb(18, 25, 43));
+  background-image: radial-gradient(circle at 50% 100%, rgb(119 39 85), rgb(37 18 47));
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -34,6 +34,7 @@
   object-position: initial;
   filter: none;
   border: 2px solid white;
+  padding: 10px;
 }
 .links {
   padding-top: 20px;
@@ -55,6 +56,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  min-width: 350px;
 }
 .links .link-item:hover {
   box-shadow: 0px 0px 8px 1px white;
@@ -81,4 +83,40 @@
 .links .link-item .link-space {
   width: 50px;
   height: 50px;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+.snowExample{
+  position: absolute;
+  top: -450px;
+  opacity: .5;
+  text-align: center;
+  animation: SnowExampleSlide ease-in infinite;
+  -webkit-animation: SnowExampleSlide ease-in infinite;
+  -moz-animation: SnowExampleSlide ease-in infinite;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+}
+
+@keyframes SnowExampleSlide {
+  from {position: absolute; top: -250px;}
+  to {position: absolute; top: 100%;}
+}
+
+@-webkit-keyframes SnowExampleSlide {
+  from {position: absolute; top: -250px;}
+  to {position: absolute; top: 100%;}
+}
+
+@-moz-keyframes SnowExampleSlide {
+  from {position: absolute; top: -250px;}
+  to {position: absolute; top: 100%;}
 }

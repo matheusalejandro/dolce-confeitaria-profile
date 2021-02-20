@@ -1,5 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="background">
+  <img alt="snowflakes" src="/assets/donut1.svg" class="snowExample" style="width: 70px; -webkit-animation-delay: 0s;animation-delay: 0s;-webkit-animation-duration: 8s;animation-duration: 8s; left:50%; margin-left: -45%;" />
+
+  <img alt="snowflakes" src="/assets/donut2.svg" class="snowExample" style="width: 70px; -webkit-animation-delay: 1s;animation-delay: 1s;-webkit-animation-duration: 8s;animation-duration: 8s; left:50%; margin-left: -15%;" />
+
+  <img alt="snowflakes" src="/assets/donut1.svg" class="snowExample" style="width: 70px; -webkit-animation-delay: 2s;animation-delay: 2s; -webkit-animation-duration: 8s;animation-duration: 8s; left:50%; margin-left: -30%;" />
+
+  <img alt="snowflakes" src="/assets/donut2.svg" class="snowExample" style="width: 70px; -webkit-animation-delay: 3s;animation-delay: 3s; -webkit-animation-duration: 8s;animation-duration: 8s; left:50%; margin-left: -45%;" />
+
+  <img alt="snowflakes" src="/assets/donut1.svg" class="snowExample" style="width: 70px; -webkit-animation-delay: 0s;animation-delay: 0s; -webkit-animation-duration: 5s;animation-duration: 5s; left:50%; margin-left: 25%;" />
+
+  <img alt="snowflakes" src="/assets/donut2.svg" class="snowExample" style="width: 70px; -webkit-animation-delay: 2s;animation-delay: 2s; -webkit-animation-duration: 5s;animation-duration: 5s; left:50%; margin-left: 0%;" />
 </div>
 <div class="main-content">
   <div class="company">
@@ -10,14 +21,9 @@
     <h2>Dolce Confeitaria</h2>
   </div>
   <div class="links">
-    <div class="link-item" (click)="open('https://instagram.com/dolce_confeitaria')">
-      <div class="link-logo"><img src="/assets/instagram.svg"></div>
-      <div class="link-text">Instagram</div>
-      <div class="link-space"></div>
-    </div>
-    <div class="link-item" (click)="open('https://www.tiktok.com/@mayaragaspar')">
-      <div class="link-logo"><img src="/assets/music.svg"></div>
-      <div class="link-text">TikTok</div>
+    <div class="link-item" *ngFor="let item of socialNetworks | orderBy: {property: 'order', direction: 1}" (click)="open(item.link)" >
+      <div class="link-logo"><img src="/assets/{{item.icon}}"></div>
+      <div class="link-text">{{item.name}}</div>
       <div class="link-space"></div>
     </div>
   </div>
