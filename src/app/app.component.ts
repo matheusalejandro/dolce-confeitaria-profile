@@ -22,13 +22,13 @@ export class AppComponent {
         link: 'https://instagram.com/dolce_confeitaria'
       },
       {
-        order: 1,
+        order: 4,
         name: 'TikTok',
         icon: 'tiktok.svg',
         link: 'https://www.tiktok.com/@mayaragaspar'
       },
       {
-        order: 4,
+        order: 5,
         name: 'Facebook',
         icon: 'facebook.svg',
         link: 'https://www.facebook.com/DolceConfeitariaSP'
@@ -38,6 +38,12 @@ export class AppComponent {
         name: 'Whatsapp',
         icon: 'whatsapp.svg',
         link: 'https://wa.me/%2B5511987797059?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido.'
+      },
+      {
+        order: 1,
+        name: 'Cardápio',
+        icon: 'cardapio.svg',
+        link: 'https://www.flipsnack.com/dolceconfeitaria/dolce-confeitaria.html'
       }
     ]
   }
