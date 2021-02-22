@@ -25,7 +25,7 @@ export class AppComponent {
         order: 4,
         name: 'TikTok',
         icon: 'tiktok.svg',
-        link: 'https://www.tiktok.com/@mayaragaspar'
+        link: 'https://vm.tiktok.com/ZMeFkuvqA/'
       },
       {
         order: 5,
