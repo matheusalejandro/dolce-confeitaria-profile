@@ -17,7 +17,7 @@
     <h2>Dolce Confeitaria</h2>
   </div>
   <div class="links">
-    <div class="link-item" *ngFor="let item of socialNetworks | orderBy: {property: 'order', direction: 1}" (click)="open(item.link)" >
+    <div class="link-item" *ngFor="let item of socialNetworks | orderBy: {property: 'order', direction: 1}" (click)="open(item)" >
       <div class="link-logo"><img src="/assets/{{item.icon}}"></div>
       <div class="link-text">{{item.name}}</div>
       <div class="link-space"></div>
