@@ -49,7 +49,7 @@ export class AppComponent {
   }
 
   public open(item) {
-    console.log("teste");
+    window.analytics.track('Link: ' + item);
     window.location.href=item;
   }
 

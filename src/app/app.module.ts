@@ -11,3 +11,7 @@ import { OrderrByPipe } from './orderby';
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+declare global {
+  interface Window { analytics: any; }
+}
