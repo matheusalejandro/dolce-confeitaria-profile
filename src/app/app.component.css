@@ -4,9 +4,10 @@
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  position: fixed;
+  /*position: fixed;*/
   inset: 0px;
   z-index: -1;
+  position: absolute;
 }
 .main-content {
   display: flex;
